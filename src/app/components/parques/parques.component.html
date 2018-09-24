@@ -1,0 +1,11 @@
+<h2>{{ this.nombre }}</h2>
+<ul>
+  <li>Metros: {{ metros }}</li>
+  <li>Vegetación: {{ vegetacion }}</li>
+  <li>
+    <span *ngIf="abierto">Abierto</span>
+    <span *ngIf="!abierto">Cerrado</span>
+  </li>
+</ul>
+
+<button type="button" (click)="emitirEvento($event)">Mostrar en padre</button>
